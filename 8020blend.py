@@ -28,8 +28,9 @@ def create_ultimate_blend():
     # Format cleanly for submission
     final['target'] = np.round(final['target'], 3)
 
-    final.to_csv('ultimate_blend.csv', index=False, lineterminator='\n')
-    print("✅ File 'ultimate_blend.csv' created successfully! Ready for your FINAL submission.")
+    # OUTPUT DIRECTLY TO YOUR TEAM NAME
+    final.to_csv('o.csv', index=False, lineterminator='\n')
+    print("✅ File 'o.csv' created successfully! Ready for your FINAL submission.")
 
 if __name__ == "__main__":
     create_ultimate_blend()
